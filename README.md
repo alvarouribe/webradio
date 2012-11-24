@@ -1,7 +1,7 @@
 Webradio
 ========
 
-Simple PHP Script to play control streaming radio on Raspberry PI
+Simple PHP Script to control streaming radio on Raspberry PI
 
 I hacked this together quickly to enable me to control streaming audio stations via a web browser on my home network.  My Raspberry PI is connected to the sound system, so effectively, its a headless audio player.
 
