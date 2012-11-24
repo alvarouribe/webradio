@@ -78,9 +78,20 @@ foreach($stations as $station =>$url)
 </div>
 <div class="controls">
 <span class="heading">Controls</span><br>
-<a href="index.php?off=true">Off</a><br>
-<a href="index.php?vol=plus" onclick="return vol('plus');">^</a><br>
-<a href="index.php?vol=min" onclick="return vol('min');">v</a><br>
+<div style="width: 100%;">
+	<div style="float: left;width:50%;">Power</div>
+	<div>
+	<button style="float:right;width: 21px; height: 20px;background: url('images/off.png');" onclick="turnoff();"></button>
+	</div>
+</div>
+<div style="clear: both;"></div>
+<div>
+<div style="float: left;width:50%;">Volumn</div>
+<div style="width:21px;float: right;">
+<button style="width: 20px; height: 20px;background: url('images/up.png');" onclick="return vol('plus');"></button>
+<button style="width: 20px; height: 20px;background: url('images/down.png');" onclick="return vol('min');"></button>
+</div>
+</div>
 </div>
 
 <script language="javascript">
@@ -91,6 +102,12 @@ function vol(direction)
 	});
 
 	return false;
+}
+function turnoff()
+{
+	$.ajax({
+  		url: "index.php?off=true"
+	});
 }
 </script>
 </html>
