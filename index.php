@@ -34,7 +34,8 @@
 <?php 
 $stations = array("Coast FM" => "http://radionetworknz-ice.streamguys.com:80/coonline.mp3",
 		"Life FM" => "http://wms-rbg.harmonycdn.net/lifefm",
-		"Life FM Worship Stream"=>"http://wms-rbg.harmonycdn.net/lifefmworship");
+		"Life FM Worship Stream"=>"http://wms-rbg.harmonycdn.net/lifefmworship",
+		"Radio Rhema"=>"http://wms-rbg.harmonycdn.net/rhema?MSWMExt=.asf");
 
 //Playstation
 if(isset($_REQUEST['station']))
